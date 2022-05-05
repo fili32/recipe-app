@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./css/edit.css">
+        <title>Recipe App-Edit</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form action="">
+                        <div class="input-group-lg mb-3 mt-5">
+                            <input type="text" id="recipe-title-input" class="form-control" value='' aria-label="title input" placeholder="Spicy Jambalaya" aria-describedby="inputGroup-sizing-lg">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="steps-textarea" rows="3" value='' placeholder="Step 1.&#10;Step 2.&#10;Step 3."></textarea>
+                        </div>
+                        <h4 class="mb-4">Ingredients</h4>
+                        <div class="mb-3" id="ingredients"></div>
+                        <div class="input-group mb-4 add-ingr-el">
+                            <input type="text" class="form-control input-ingr" placeholder="Add ingredient" aria-label="Example text with button addon" aria-describedby="create-button-addon">
+                            <button type="button" class="btn btn-outline-secondary" id="create-button-addon">Add</button>
+                        </div>
+                        <button type="button" class="btn btn-secondary" id="remove-button-recipe">Delete Recipe</button>
+                   </form>
+                </div>
+            </div>
+        </div>
+        <script src="/scripts/edit-bundle.js"></script>
+    </body>
+</html>
